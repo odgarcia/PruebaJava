@@ -31,6 +31,7 @@ export class APIService {
   }
 
   createOrder(order: CustomerOrder): Observable<CustomerOrder> {
+    console.log(JSON.stringify(order));
     return this.httpClient.post<CustomerOrder>(`${this.API_URL}/order/`, order);
   }
 
