@@ -1,0 +1,31 @@
+<h1>Order Form</h1>
+<form #orderForm="ngForm" (ngSubmit)="onSubmit()">
+
+  <div class="form-group">
+    <label for="customers">Customer</label>
+    <select class="form-control" id="customer" required [(ngModel)]="model.customer" (ngModelChange)="onChangeCustomer()"
+      name="selectedCustomer">
+      <option *ngFor="let customer of customers" [value]="customer.id">{{ customer.name }}</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="deliveryAddress">Delivery Address</label>
+    <input type="text" class="form-control" required id="deliveryAddress" [(ngModel)]="model.deliveryAddress" name="deliveryAddress">
+  </div>
+
+  <div class="form-group">
+    <label for="product">Products</label>
+    <select class="form-control" id="product" required [(ngModel)]="model.product" name="product" (ngModelChange)="onSelectProduct()">
+      <option *ngFor="let product of products" [value]="product.product.id">{{product.product.name}} ${{product.product.price}}</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="total">Total</label>
+    <input type="text" required class="form-control" id="total" [(ngModel)]="model.total" disabled name="total" value="{{total}}">
+  </div>
+
+  <button type="submit" class="btn btn-success" [disabled]="!orderForm.form.valid">Submit</button>
+
+</form>

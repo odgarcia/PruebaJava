@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1>
+    Orders {{ name }}
+</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Date Order</th>
+            <th>Delivery Address</th>
+            <th>Products</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let order of customerOrders">
+            <td>{{order.id}}</td>
+            <td>{{order.orderDate.substring(0,10)}}</td>
+            <td>{{order.deliveryAddress}}</td>
+            <td>
+                <ul>
+                    <li *ngFor="let detail of order.details">
+                        {{detail.quantity}} x {{detail.product.name}} -> {{detail.price}}
+                    </li>
+                </ul>
+            </td>
+            <td>{{order.total}}</td>
+        </tr>
+    </tbody>
+</table>

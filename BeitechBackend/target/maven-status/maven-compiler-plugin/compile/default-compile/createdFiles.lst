@@ -1,0 +1,12 @@
+com\osorcorp\beitechbackend\Application.class
+com\osorcorp\beitechbackend\api\OrderController.class
+com\osorcorp\beitechbackend\repositories\OrderRepository.class
+com\osorcorp\beitechbackend\entities\OrderDetail.class
+com\osorcorp\beitechbackend\entities\Customer.class
+com\osorcorp\beitechbackend\repositories\CustomerRepository.class
+com\osorcorp\beitechbackend\repositories\OrderDetailRepository.class
+com\osorcorp\beitechbackend\repositories\CustomerAvailableProductRepository.class
+com\osorcorp\beitechbackend\api\CustomerController.class
+com\osorcorp\beitechbackend\entities\Product.class
+com\osorcorp\beitechbackend\entities\CustomerOrder.class
+com\osorcorp\beitechbackend\entities\CustomerAvailableProduct.class

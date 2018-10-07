@@ -1,0 +1,19 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Beitech</a>
+      </div>
+      <ul class="nav navbar-nav" routerLinkActive="active">
+          <li class="nav-item"><a class="nav-link" routerLink="create-orders">Create Orders</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="customer">Customers</a></li>
+      </ul>
+    </div>
+  </nav>
+<div class="container">
+    <div class="panel panel-primary">
+      <div class="panel-heading">{{title}}</div>
+      <div class="panel-body">
+          <router-outlet></router-outlet>
+      </div>      
+    </div>
+  </div>
