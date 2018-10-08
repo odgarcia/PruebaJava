@@ -12,4 +12,18 @@ Metodos Rest
 | order/ | POST | createOrders Guarda la orden |
 | customers/:Id/orders | GET | getOrders Retorna las ordenes del cliente |
 
+## Ejecución
+
+El frontend esta hecho en angular y el backend en springboot
+
+Se debe ejecutar el Frontend con el comando npm install
+
+El frontend se ejecuta en http://localhost:4200
+
+El backend se ejecuta en http://localhost:8080
+
+Se debe primero ejecutar los script 
+DDL.sql y DML.sql
+
+
 
