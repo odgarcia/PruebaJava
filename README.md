@@ -16,7 +16,7 @@ Metodos Rest
 
 El frontend esta hecho en angular y el backend en springboot
 
-Se debe ejecutar el Frontend con el comando npm install
+Se debe ejecutar el Frontend primero con el comando npm install y luego npm start
 
 El frontend se ejecuta en http://localhost:4200
 
