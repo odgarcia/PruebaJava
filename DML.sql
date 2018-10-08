@@ -15,3 +15,9 @@ INSERT INTO public.customer_available_product (id, customer_id, product_id) VALU
 INSERT INTO public.customer_available_product (id, customer_id, product_id) VALUES(6, 3, 4);
 INSERT INTO public.customer_available_product (id, customer_id, product_id) VALUES(7, 3, 5);
 INSERT INTO public.customer_available_product (id, customer_id, product_id) VALUES(8, 3, 6);
+INSERT INTO public.customer_order (id, order_date, total, delivery_address, customer_id) VALUES(1, '2018-10-07', 1275, 'calle falsa 123', 1);
+INSERT INTO public.customer_order (id, order_date, total, delivery_address, customer_id) VALUES(2, '2018-10-07', 1200, 'calle falsa 123', 2);
+INSERT INTO public.customer_order (id, order_date, total, delivery_address, customer_id) VALUES(3, '2018-10-07', 1000, 'calle falsa 123', 3);
+INSERT INTO public.order_detail (id, quantity, price, product_id, order_id) VALUES(1, 1, 1275, 1, 1);
+INSERT INTO public.order_detail (id, quantity, price, product_id, order_id) VALUES(2, 1, 1200, 2, 2);
+INSERT INTO public.order_detail (id, quantity, price, product_id, order_id) VALUES(3, 1, 1000, 5, 3);
