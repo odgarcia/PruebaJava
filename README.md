@@ -1,6 +1,6 @@
 # PruebaJava
 
-Prueba de adminsión de Java
+Prueba de admisión de Java
 
 ## API Rest
 
