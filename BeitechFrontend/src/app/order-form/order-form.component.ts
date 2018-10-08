@@ -16,7 +16,6 @@ export class OrderFormComponent {
   products: Product[];
   customers: Customer[];
   customerOrder: CustomerOrder;
-  order: [];
   orderDetails: OrderDetail[];
   submitted = false;
   total = '';
@@ -52,8 +51,8 @@ export class OrderFormComponent {
 
   newOrder() {
     console.log("guardando");    
-    this.order = [this.total, this.model['deliveryAddress'], this.model['product']];
-    this.customerService.createOrder(this.order).subscribe( data => {
+    let order = ["", this.total, this.model['deliveryAddress'], this.model['product']];
+    this.customerService.createOrder(order).subscribe( data => {
       alert("Order created successfully.");
     });
   }
