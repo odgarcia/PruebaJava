@@ -15,6 +15,17 @@ CREATE TABLE public.customer (
 
 -- Drop table
 
+-- DROP TABLE public.product
+
+CREATE TABLE public.product (
+	id serial NOT NULL,
+	"name" varchar NOT NULL,
+	price float8 NOT NULL,
+	CONSTRAINT product_pkey PRIMARY KEY (id)
+);
+
+-- Drop table
+
 -- DROP TABLE public.customer_available_product
 
 CREATE TABLE public.customer_available_product (
@@ -55,16 +66,7 @@ CREATE TABLE public.order_detail (
 	CONSTRAINT product_fk FOREIGN KEY (product_id) REFERENCES product(id)
 );
 
--- Drop table
 
--- DROP TABLE public.product
-
-CREATE TABLE public.product (
-	id serial NOT NULL,
-	"name" varchar NOT NULL,
-	price float8 NOT NULL,
-	CONSTRAINT product_pkey PRIMARY KEY (id)
-);
 
 
 GRANT ALL ON TABLE public.customer_order TO user_beitech;
