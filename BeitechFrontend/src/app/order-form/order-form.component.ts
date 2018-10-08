@@ -51,8 +51,7 @@ export class OrderFormComponent {
 
   newOrder() {
     console.log("guardando");    
-    let order = ["", this.total, this.model['deliveryAddress'], this.model['product']];
-    this.customerService.createOrder(order).subscribe( data => {
+    this.customerService.createOrder(this.model).subscribe( data => {
       alert("Order created successfully.");
     });
   }
