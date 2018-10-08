@@ -6,13 +6,6 @@ Prueba de adminsión de Java
 
 Metodos Rest
 
-
-| URI | Metodo |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
-
 | URI  | Metodo | Descripción |
 | ------------- | ------------- | ------------- |
 | customers/:Id/products |GET| Customer Available Products Retorna los productos disponibles que puede seleccionar el cliente |
